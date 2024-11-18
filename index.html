@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - JODOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+    <!-- Vincula el CSS del menú -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/miframework.css">
+    <style>
+        .fondo {
+            background-image: url('images/main.png'); /* Cambiar por tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 550px; /* Ajusta la altura según sea necesario */
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu-bar">
+        <!-- Elementos del menú principal -->
+        <div class="menu-items ">
+            <a class="fo-2 fuente-1 t-primario text-decoration-none pl-4" href="#">Promociones</a>
+            <a class="fo-2 fuente-1 t-primario text-decoration-none" href="#">Fotos</a>
+            <a class="fo-2 fuente-1 t-primario text-decoration-none" href="#">Servicios</a>
+            <a class="fo-2 fuente-1 t-primario text-decoration-none" href="#">Mapa</a>
+            <a class="fo-2 fuente-1 t-primario text-decoration-none" href="#">Contacto</a>
+        </div>
+        <!-- Elementos del usuario -->
+        <div class="user">
+            <img class="h-1 w-1 mr-1" src="images/user.png" alt="Usuario">
+            <span class="mr-2 fo-4 fuente-1 t-primario text-decoration-none">Mi cuenta</span>
+            <span class="mr-1 fo-4 fuente-1 t-primario text-decoration-none">ES</span>
+            <img class=" mr-1 h-2 w-2" src="images/flag.png" alt="Bandera España">
+            <img class="h-3 w-3" src="images/arrow.png" alt="flecha">
+        </div>
+    </header>
+    <!-- FONDO -->
+    <div class="fondo">
+        <div class="hero-content">
+            <div class=" ml-4 romanesco-regular fo-5">SPA - Jodos</div>
+            <div class="ml-4 mt-2 fo-6  fuente-1 fo-negrita1">Regálate un momento de paz y 
+                <br> consiente a tu piel en el mejor lugar</div>
+        </div>
+    </div>
+    <!-- RESERVACIONES -->
+    <section class="reservation-section">
+        <div class="reservation-container">
+            <div class="inline-item">
+                <label class="fuente-1 fo-2" for="appointment">RESERVA TU CITA:</label>
+                <input type="text" id="appointment" placeholder="">
+            </div>
+            <div class="inline-item">
+                <label class="fuente-1 fo-2" for="promo-code">CÓDIGO PROMOCIONAL:</label>
+                <input class="fuente-1 fo-2" type="text" id="promo-code" placeholder="CÓDIGO">
+            </div>
+        </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section class="services-section">
+        <div class="service">
+            <div class="bg-primario t-blanco p-1 fo-6 fo-negrita2 fuente-1 text-center border-tl border-tr">
+                Masaje de pies
+            </div>
+            <img src="images/pies.png" alt="Masaje de pies" class="w-100 h-auto">
+            <div>
+                <div class="fuente-1 fo-3 t-gris m-4 text-left">Esta es una descripción de la opción en cuestión ...</div>
+                <div class="price-reserve">
+                    <div class="fuente-1 fo-1 t-primario fo-negrita mb-1 text-left ml-1">$65</div>
+                    <button class="service-button fuente-1 fo-2 fo-negrita bg-primario t-blanco mb-1 mr-1">RESERVAR</button> 
+                </div>
+            </div>
+        </div>
+    
+        <div class="service">
+            <div class="bg-primario t-blanco p-1 fo-6 fo-negrita2 fuente-1 text-center border-tl border-tr">
+                Masaje relajante
+            </div>
+            <img src="images/relajante.png" alt="Masaje relajante" class="w-100 h-auto">
+            <div>
+                <div class="fuente-1 fo-3 t-gris m-4 text-left">Esta es una descripción de la opción en cuestión ...</div>
+                <div class="price-reserve">
+                    <div class="fuente-1 fo-1 t-primario fo-negrita mb-1 text-left ml-1">$60</div>
+                    <button class="service-button fuente-1 fo-2 fo-negrita bg-primario t-blanco mb-1 mr-1">RESERVAR</button> 
+                </div>
+            </div>
+        </div>
+    
+        <div class="service">
+            <div class=" bg-primario t-blanco p-1 fo-6 fo-negrita2 fuente-1 text-center border-tl border-tr">
+                Masaje con bambú
+            </div>
+            <img src="images/bambu.png" alt="Masaje con bambú" class="w-100 h-auto">
+            <div>
+                <div class="fuente-1 fo-3 t-gris m-4 text-left">Esta es una descripción de la opción en cuestión ...</div>
+                <div class="price-reserve">
+                    <div class="fuente-1 fo-1 t-primario fo-negrita mb-1 text-left ml-1">$58</div>
+                    <button class="service-button fuente-1 fo-2 fo-negrita bg-primario t-blanco mb-1 mr-1">RESERVAR</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MEMBRESIA -->
+    <section class="membership-section">
+        <h2 class="membership-title">Hazte socio y prueba nuestros beneficios</h2>
+        <div class="membership-container">
+            <div class="membership-content">
+                <!-- Plan Gold -->
+                <div class="membership-card">
+                    <div class="membership-icon gold">
+                        <img src="images/gold.png" alt="Gold" class="icon">
+                    </div>
+                    <h3 class="membership-type">GOLD</h3>
+                    <button class="membership-button">VER CONDICIONES</button>
+                    <ul class="membership-benefits">
+                        <li>Gimnasio</li>
+                        <li>Piscina</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+                <!-- Plan Premium -->
+                <div class="membership-card">
+                    <div class="membership-icon premium">
+                        <img src="images/premium.png" alt="Premium" class="icon">
+                    </div>
+                    <h3 class="membership-type">PREMIUM</h3>
+                    <button class="membership-button">VER CONDICIONES</button>
+                    <ul class="membership-benefits">
+                        <li>Gimnasio</li>
+                        <li>Todos los tratamientos</li>
+                    </ul>
+                </div>
+                <!-- Plan Plate -->
+                <div class="membership-card">
+                    <div class="membership-icon plate">
+                        <img src="images/plate.png" alt="Plate" class="icon">
+                    </div>
+                    <h3 class="membership-type">PLATE</h3>
+                    <button class="membership-button">VER CONDICIONES</button>
+                    <ul class="membership-benefits">
+                        <li>Tratamientos faciales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- REDES SOCIALES -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">POLÍTICAS DE COOKIES</a>
+            <a href="#">AVISO LEGAL</a>
+            <a href="#">PROTECCIÓN DE DATOS</a>
+            <a href="#">MAPA DEL SITIO</a>
+        </div>
+        <div class="footer-social">
+            <span>SÍGUENOS EN</span>
+            <a href="#" class="social-icon">
+                <img src="images/rs_facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="images/rs_twiter.png" alt="Twitter">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="images/rs_youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
